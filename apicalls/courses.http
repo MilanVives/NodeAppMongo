@@ -1,0 +1,34 @@
+# Courses CALLS #
+# Variables
+@base_URL=http://localhost:3000/api/courses
+
+get {{base_URL}}
+
+###
+@objId1=628cd0773ce9cf812842cac0
+get {{base_URL}}/{{objId1}}
+Content-Type: application/json
+
+###
+post {{base_URL}}
+Content-Type: application/json
+
+{
+    "name": "Node.js", 
+    "code": "V5R305"
+}
+
+###
+@objId2=628cd0773ce9cf812842cac0
+put {{base_URL}}/{{objId2}}
+Content-Type: application/json
+
+{
+    "name": "New Node.js", 
+    "code": "V5R305_2"
+}
+
+###
+@objId3=6277bab5b675f91753111fd9
+delete {{base_URL}}/{{objId3}}
+Content-Type: application/json

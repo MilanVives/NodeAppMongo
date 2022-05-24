@@ -1,0 +1,36 @@
+# Students CALLS #
+# Variables
+@base_URL=http://localhost:3000/api/students
+
+get {{base_URL}}
+
+###
+@objId1=628cd1cba927f01ea308af9e
+get {{base_URL}}/{{objId1}}
+Content-Type: application/json
+
+###
+post {{base_URL}}
+Content-Type: application/json
+
+{
+    "name": "Student X",
+    "distance": true, 
+    "number": "r125254"
+}
+
+###
+@objId2=628cd1cba927f01ea308af9e
+put {{base_URL}}/{{objId2}}
+Content-Type: application/json
+
+{
+    "name": "Student Y",
+    "distance": false, 
+    "number": "r125254"
+}
+
+###
+@objId3=628cd1cba927f01ea308af9e
+delete {{base_URL}}/{{objId3}}
+Content-Type: application/json
