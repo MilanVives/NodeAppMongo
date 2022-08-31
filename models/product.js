@@ -17,8 +17,6 @@ const productSchema = new mongoose.Schema({
   }
 });
 
-// add property price to product
-
 
 const Product = mongoose.model('Product', productSchema);
 
