@@ -1,4 +1,4 @@
-const {Exam, validate} = require('../models/exam'); 
+const {Exam, validate} = require('../models/sale'); 
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();

@@ -1,6 +1,6 @@
-# Students CALLS #
+# Customers CALLS #
 # Variables
-@base_URL=http://localhost:3000/api/students
+@base_URL=http://localhost:3000/api/customers
 
 get {{base_URL}}
 
@@ -14,9 +14,10 @@ post {{base_URL}}
 Content-Type: application/json
 
 {
-    "name": "Student X",
-    "distance": true, 
-    "number": "r125254"
+    "name": "Customer X",
+    "active": true,
+    "email": "customerx@gmail.com", 
+    "number": "125254"
 }
 
 ###
@@ -25,9 +26,10 @@ put {{base_URL}}/{{objId2}}
 Content-Type: application/json
 
 {
-    "name": "Student Y",
-    "distance": false, 
-    "number": "r125254"
+    "name": "Customer Y",
+    "active": false,
+    "email": "customery@gmail.com", 
+    "number": "125255"
 }
 
 ###

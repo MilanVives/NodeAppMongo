@@ -1,7 +1,6 @@
-# Courses CALLS #
+# Products CALLS #
 # Variables
-@base_URL=http://localhost:3000/api/courses
-
+@base_URL=http://localhost:3000/api/products
 get {{base_URL}}
 
 ###
@@ -14,18 +13,18 @@ post {{base_URL}}
 Content-Type: application/json
 
 {
-    "name": "Node.js", 
-    "code": "V5R305"
+    "name": "Macbook Air M2", 
+    "code": "MBA9785"
 }
 
 ###
-@objId2=628cd0773ce9cf812842cac0
+@objId2=630f5f1640d03c15ba9349bb
 put {{base_URL}}/{{objId2}}
 Content-Type: application/json
 
 {
-    "name": "New Node.js", 
-    "code": "V5R305_2"
+    "name": "Macbook Pro M2", 
+    "code": "MBP8759"
 }
 
 ###

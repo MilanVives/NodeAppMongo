@@ -1,7 +1,7 @@
 const Joi = require('joi');
 const mongoose = require('mongoose');
 
-const courseSchema = new mongoose.Schema({
+const productSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -17,17 +17,20 @@ const courseSchema = new mongoose.Schema({
   }
 });
 
-const Course = mongoose.model('Course', courseSchema);
+// add property price to product
 
-function validateCourse(course) {
+
+const Product = mongoose.model('Product', productSchema);
+
+function validateProduct(product) {
   const schema = Joi.object({
     name: Joi.string().min(5).max(50).required(),
     code: Joi.string().min(5).max(10).required()
   });
 
-  return schema.validate(course);
+  return schema.validate(product);
 }
 
-exports.courseSchema = courseSchema;
-exports.Course = Course; 
-exports.validate = validateCourse;
+exports.productSchema = productSchema;
+exports.Product = Product; 
+exports.validate = validateProduct;

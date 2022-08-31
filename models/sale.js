@@ -4,19 +4,19 @@ const mongoose = require('mongoose');
 //ToDo Motivatie keuze datamodel
 
 
-const Exam = mongoose.model('Exam', new mongoose.Schema({
+const Sale = mongoose.model('Sale', new mongoose.Schema({
   //ToDo vervolledig het schema
 }));
 
-function validateExam(exam) {
+function validateSale(sale) {
   const schema = Joi.object({
     //ToDo vervolledig validatieschema
   });
 
-  return schema.validate(exam);
+  return schema.validate(sale);
 }
 
-exports.Exam = Exam; 
-exports.validate = validateExam;
+exports.Sale = Sale; 
+exports.validate = validateSale;
 
-//ToDo exam model vervolledigen
+//ToDo sale model vervolledigen
