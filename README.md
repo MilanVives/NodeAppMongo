@@ -1,3 +1,3 @@
-# Dit is de starter voor het examen
+# Boilerplate Node APP
 
-Run deze applicatie in containers samen met een MongoDB databank d.m.v een Docker Compose file. 
+Boilerplate NodeJS app connected with a MongoDB database running on mongodb://localhost/ port 27017
